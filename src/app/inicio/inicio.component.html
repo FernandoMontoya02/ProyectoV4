@@ -1,0 +1,61 @@
+<app-navbar></app-navbar> 
+
+<div class="inicio-container">
+    <header class="header relative w-full h-screen">
+        <!-- Video de YouTube como fondo -->
+        <iframe class="absolute top-0 left-0 w-full h-full object-contain"
+        src="https://www.youtube.com/embed/squWBI3rl3k?autoplay=1&mute=1&loop=1&playlist=squWBI3rl3k&controls=0&showinfo=0&rel=0&modestbranding=1"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+    </iframe>
+    
+    
+        <!-- Contenido del Header -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex items-center justify-center text-center text-white">
+          <div class="header-content px-4 py-8">
+            <h1 class="text-4xl font-bold">Barbería Elegance</h1>
+            <p class="text-lg mt-4">Tu estilo, nuestra pasión.</p>
+          </div>
+        </div>
+      </header>
+  
+    <!-- Bloque 1: Imagen a la izquierda y texto a la derecha -->
+    <section class="about-section bg-gray-100 py-16">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-8 px-4">
+          <img src="assets/imagenes/barber-elegance.jpg" alt="Barber Elegance" 
+               class="w-2/3 md:w-1/2 rounded-lg shadow-lg"> <!-- Imagen más grande -->
+          <div class="text-center md:text-left">
+            <h2 class="text-3xl font-bold text-[#0E1C2C] mb-4">Barbería Elegance</h2>
+            <p class="text-gray-600 leading-relaxed">
+              En Barbería Elegance, nos dedicamos a proporcionar una experiencia única que combina tradición y modernidad. Nuestro equipo de profesionales está comprometido con resaltar tu estilo personal, ofreciendo cortes de cabello, afeitados clásicos y cuidado capilar de la más alta calidad. Ven y vive la diferencia.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      
+  
+    <!-- Bloque 2: Testimonios -->
+    <section class="testimonials-section bg-white py-16">
+      <h2 class="text-3xl font-bold text-[#0E1C2C] text-center mb-12">Lo que dicen nuestros clientes</h2>
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 px-4">
+        <!-- Testimonio 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg flex-1">
+          <p class="text-gray-600 italic">
+            "Barber Elegance es sin duda la mejor peluquería en la que he estado. El equipo es increíble y siempre salgo más que satisfecho. ¡Recomendado al 100%!"
+          </p>
+          <p class="text-[#0E1C2C] font-bold mt-4">- Juan Pérez</p>
+        </div>
+        <!-- Testimonio 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow-lg flex-1">
+          <p class="text-gray-600 italic">
+            "Un servicio excepcional y un ambiente acogedor. Nunca he recibido tantos cumplidos por mi corte de cabello. ¡Gracias, Barber Elegance!"
+          </p>
+          <p class="text-[#0E1C2C] font-bold mt-4">- María López</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <app-footer></app-footer> 

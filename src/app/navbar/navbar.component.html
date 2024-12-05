@@ -1,0 +1,59 @@
+<nav id="navbar" class="fixed top-0 left-0 w-full p-4 flex items-center justify-between z-50 transition duration-300">
+  <!-- Logo en la parte izquierda -->
+  <div class="flex items-center">
+    <a routerLink="/inicio" routerLinkActive="active" class = "icono-logo"> 
+      <img src="assets/imagenes/logo.png" alt="Logo" class="h-16 mr-4"></a>
+      <span class="text-white text-2xl font-bold">Barbería Elegance</span>
+  </div>
+
+  <!-- Enlaces de navegación -->
+  <ul class="flex space-x-4 text-white">
+    <li>
+      <a routerLink="/inicio" routerLinkActive="active" 
+         class="py-2 px-4 border-b-2 border-transparent hover:border-[#897648] hover:text-[#897648] transition duration-300" 
+         [routerLinkActiveOptions]="{exact: true}">
+        Inicio
+      </a>
+    </li>
+    <li>
+      <a routerLink="/nosotros" routerLinkActive="active" 
+         class="py-2 px-4 border-b-2 border-transparent hover:border-[#897648] hover:text-[#897648] transition duration-300" 
+         [routerLinkActiveOptions]="{exact: true}">
+        Nosotros
+      </a>
+    </li>
+    <!-- Menú Servicios con subpestañas -->
+    <li class="relative group">
+      <a routerLink="/services" routerLinkActive="active" 
+         class="py-2 px-4 border-b-2 border-transparent hover:border-[#897648] hover:text-[#897648] transition duration-300" 
+         [routerLinkActiveOptions]="{exact: true}">
+        Servicios
+        <!-- Flecha indicadora con animación de rotación -->
+        <span class="ml-2 inline-block transition-transform duration-300 transform group-hover:rotate-180">&#9660;</span>
+      </a>
+      <!-- Subpestañas al pasar el cursor -->
+      <ul class="absolute left-0 hidden group-hover:block bg-[#0E1C2C] text-white shadow-lg rounded-lg p-4 space-y-2 w-[216px]">
+        <li>
+          <a href="/tratamientos-faciales" class="py-2 px-4 text-sm hover:bg-[#897648] rounded-md">Tratamientos Faciales</a>
+        </li>
+        <li>
+          <a href="/barberia-peluqueria" class="py-2 px-4 text-sm hover:bg-[#897648] rounded-md">Barbería - Peluquería</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a routerLink="/gallery" routerLinkActive="active" 
+         class="py-2 px-4 border-b-2 border-transparent hover:border-[#897648] hover:text-[#897648] transition duration-300" 
+         [routerLinkActiveOptions]="{exact: true}">
+        Galería
+      </a>
+    </li>
+    <li>
+      <a routerLink="/contact" routerLinkActive="active" 
+         class="py-2 px-4 border-b-2 border-transparent hover:border-[#897648] hover:text-[#897648] transition duration-300" 
+         [routerLinkActiveOptions]="{exact: true}">
+        Contacto
+      </a>
+    </li>
+  </ul>
+</nav>

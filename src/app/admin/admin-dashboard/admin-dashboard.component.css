@@ -1,0 +1,111 @@
+/* Contenedor principal */
+.dashboard {
+    display: flex;
+    height: 100vh; /* Altura total de la pantalla */
+  }
+  
+  /* Estilos del panel izquierdo */
+  .sidebar {
+    width: 20%; /* 1/4 de la pantalla */
+    background-color: #0E1C2C; /* Color principal */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  
+ /* Estilos de los botones */
+.menu-button {
+    background: none;
+    color: white;
+    border: none;
+    width: 100%;
+    text-align: left; /* Alineamos el texto a la izquierda */
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center; /* Alineamos el ícono y el texto en el centro vertical */
+  }
+  
+  .menu-button i {
+    font-size: 20px; /* Tamaño del ícono */
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+  }
+  
+  .menu-button:hover {
+    color: #897648; /* Color secundario */
+  }
+  
+  .menu-button::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #897648; /* Color secundario */
+    transition: width 0.3s ease;
+  }
+  
+  .menu-button:hover::after {
+    width: 100%;
+  }
+  
+  /* Estilo de botón presionado */
+  .menu-button:active {
+    color: #897648; /* Cambio de color */
+  }
+  
+  .menu-button:active::after {
+    width: 100%;
+  }
+  
+  .menu-button.active {
+    background-color: #897648; /* Fondo de color secundario para el botón activo */
+    color: white; /* Color blanco para el texto */
+  }
+  
+  .menu-button.active::after {
+    width: 100%; /* Subrayado visible cuando el botón está activo */
+  }
+
+/* Contenedor de la imagen */
+.logo-container {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+    margin-bottom: 20px; /* Espacio debajo de la imagen */
+    height: 120px; /* Ajusta la altura para centrar verticalmente */
+  }
+  
+  /* Estilo de la imagen de la empresa */
+  .empresa-logo {
+    width: 50%; /* Ajusta el tamaño de la imagen a un 60% de su tamaño original */
+    max-width: 150px; /* Tamaño máximo de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+  }
+  
+  /* Subtema "Administrar" */
+.subtema {
+    margin-bottom: 20px; /* Espacio debajo */
+    padding: 10px;
+    color: #fff; /* Color de texto blanco */
+    font-size: 16px; /* Tamaño de texto */
+    font-weight: bold; /* Resalta el texto */
+    text-align: left; /* Centra el texto */
+    border-bottom: 2px solid #897648; /* Línea debajo */
+  }
+  

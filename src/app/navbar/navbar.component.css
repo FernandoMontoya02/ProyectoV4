@@ -1,0 +1,19 @@
+a.active {
+    border-color: #897648;
+    font-weight: bold;
+    color: #897648;
+  }
+  
+  
+/* Navbar transparente por defecto */
+#navbar {
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Fondo sólido al hacer scroll */
+.navbar-scrolled {
+  background-color: #0E1C2C !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+}

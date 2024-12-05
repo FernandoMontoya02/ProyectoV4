@@ -1,0 +1,75 @@
+/* Contenedor principal de admin-cortes */
+.admin-cortes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre los cuadros */
+    margin-top: 20px;
+    align-items: center; /* Centra los cuadros */
+    height: calc(100vh - 100px); /* Hace que el contenedor ocupe toda la altura de la pantalla menos el margen */
+    width: 80vw; /* Ocupa el 75% del ancho disponible */
+    justify-content: space-between; /* Distribuye el espacio entre los cuadros */
+    padding: 20px; /* Espaciado alrededor de los cuadros */
+    box-sizing: border-box; /* Para incluir el padding dentro del tamaño */
+  }
+  
+  /* Estilo de los cuadros */
+  .cuadro {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #0E1C2C; /* Color principal del texto */
+    border: 2px solid #897648; /* Borde del cuadro de color secundario */
+    padding: 20px;
+    width: 100%; /* Hace que el cuadro ocupe todo el ancho dentro del contenedor */
+    height: calc(50vh - 20px); /* Cada cuadro ocupa el 50% de la altura de la pantalla menos el padding */
+    text-align: center; /* Centra el contenido del cuadro */
+    border-radius: 10px; /* Bordes redondeados */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido dentro de cada cuadro */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+  }
+  
+  .cuadro h3 {
+    font-size: 24px; /* Tamaño del título */
+    font-weight: bold;
+    margin-bottom: 15px; /* Espacio debajo del título */
+  }
+
+/* Barra de encabezado para clientes */
+.clientes-header {
+    display: flex;
+    justify-content: space-between; /* Espacia el título y el botón */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #0E1C2C; /* Color principal del fondo */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado en los bordes */
+    width: 80vw; /* Ocupa el 100% del ancho de la pantalla */
+    position: relative; /* La barra estará fija en la parte superior */
+    top: 0; /* Posiciona la barra en la parte superior */
+    left: 0; /* Alinea a la izquierda */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    z-index: 10; /* Asegura que la barra esté encima de otros elementos */
+    height: 60px;
+  }
+  
+  /* Estilo del título en la barra */
+  .clientes-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Elimina los márgenes */
+  }
+  
+  /* Estilo del botón de salida */
+  .btn-salir {
+    background-color: #897648; /* Color secundario */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-salir:hover {
+    background-color: #0E1C2C; /* Color principal cuando se pasa el ratón */
+  }

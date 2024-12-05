@@ -1,0 +1,159 @@
+<app-navbar></app-navbar> 
+<section class="gallery-section">
+  <h2 class="gallery-title">Galería de Cortes de Pelo</h2>
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <!-- Imagen 1 -->
+      <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-moderno.jpg',
+        title: 'Corte Moderno con Degradado',
+        price: '$20',
+        description: 'Un corte moderno con degradado y barba corta.',
+        duration: '30 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-moderno.jpg"
+        alt="Corte de Pelo Moderno con Degradado"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte Moderno con Degradado</p>
+      </div>
+    </div>
+    
+    <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-buzz.jpg',
+        title: 'Corte Buzz',
+        price: '$15',
+        description: 'Corte corto y práctico, ideal para el día a día.',
+        duration: '20 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-buzz.jpg"
+        alt="Corte de Pelo Buzz"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte Buzz</p>
+      </div>
+    </div>
+    
+    <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-undercut.jpg',
+        title: 'Corte Undercut',
+        price: '$25',
+        description: 'Estilo con lados rapados y el top largo, moderno y estilizado.',
+        duration: '35 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-undercut.jpg"
+        alt="Corte Undercut"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte Undercut</p>
+      </div>
+    </div>
+    
+    <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-crew.png',
+        title: 'Corte Crew',
+        price: '$18',
+        description: 'Corte corto y clásico, perfecto para mantenerlo sencillo y fresco.',
+        duration: '20 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-crew.png"
+        alt="Corte Crew"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte Crew</p>
+      </div>
+    </div>
+    
+    <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-caesar.jpg',
+        title: 'Corte Caesar',
+        price: '$22',
+        description: 'Corte corto con flequillo recto, ideal para rostros cuadrados.',
+        duration: '30 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-caesar.jpg"
+        alt="Corte Caesar"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte Caesar</p>
+      </div>
+    </div>
+    
+    <div class="gallery-item" (click)="openModal({
+        imageUrl: 'assets/imagenes/corte-largo.jpg',
+        title: 'Corte de Cabello Largo',
+        price: '$30',
+        description: 'Para los que prefieren mantener su largo natural, con estilo y cuidado.',
+        duration: '45 minutos'
+      })">
+      <img
+        src="assets/imagenes/corte-largo.jpg"
+        alt="Corte de Cabello Largo"
+        class="gallery-image"
+      />
+      <div class="gallery-overlay">
+        <p class="gallery-text">Corte de Cabello Largo</p>
+      </div>
+    </div>
+
+    <div class="gallery-item" (click)="openModal({
+      imageUrl: 'assets/imagenes/corte-high-fade.jpg',
+      title: 'Corte High Fade',
+      price: '$22',
+      description: 'Corte con fade alto y barba bien recortada, ideal para estilos modernos.',
+      duration: '30 minutos'
+    })">
+    <img
+      src="assets/imagenes/corte-high-fade.jpg"
+      alt="Corte High Fade"
+      class="gallery-image"
+    />
+    <div class="gallery-overlay">
+      <p class="gallery-text">Corte High Fade</p>
+    </div>
+  </div>
+  
+  <div class="gallery-item" (click)="openModal({
+      imageUrl: 'assets/imagenes/corte-tapered.jpg',
+      title: 'Corte Tapered Fade',
+      price: '$23',
+      description: 'Degradado sutil en los lados y la parte trasera, ideal para quienes buscan un estilo elegante.',
+      duration: '30 minutos'
+    })">
+    <img
+      src="assets/imagenes/corte-tapered.jpg"
+      alt="Corte Tapered Fade"
+      class="gallery-image"
+    />
+    <div class="gallery-overlay">
+      <p class="gallery-text">Corte Tapered Fade</p>
+    </div>
+  </div>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div *ngIf="selectedImage" class="modal" (click)="closeModal()">
+    <div class="modal-content" (click)="$event.stopPropagation()">
+      <img [src]="selectedImage.imageUrl" alt="Imagen Ampliada" class="modal-image" />
+      <button class="modal-close" (click)="closeModal()">×</button>
+      <div class="modal-details">
+        <h3>{{ selectedImage.title }}</h3>
+        <p><strong>Precio:</strong> {{ selectedImage.price }}</p>
+        <p><strong>Descripción:</strong> {{ selectedImage.description }}</p>
+        <p><strong>Duración:</strong> {{ selectedImage.duration }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer> 
